@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TMS 3-Day Technical Workshop - Talent Map Solutions</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="static\style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo"><img class="logo-img" src="static/tmslogo2.jpg" alt="TMS Logo"></div>
+                    <div class="company-info">
+                        <h1>Talent Map Solutions</h1>
+                        <p>Empowering Youth , Enabling Careers</p>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <!-- <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a> -->
+                    <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/talentmap.in/" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="WhatsApp"><i class="fab fa-google"></i></a>
+                    <!-- <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a> -->
+                    <!-- <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a> -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="#day1" class="nav-link active" onclick="showDay('day1', event)">Day 1</a></li>
+                <li><a href="#day2" class="nav-link" onclick="showDay('day2', event)">Day 2</a></li>
+                <li><a href="#day3" class="nav-link" onclick="showDay('day3', event)">Day 3</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <main>
+            <!-- Day 1 Content -->
+            <section id="day1" class="day-section active">
+    <div class="day-header">
+        <h2>Day 1 - Python, Flask & SQL Database</h2>
+        <p>Build robust web applications using Python, Flask, and SQLAlchemy</p>
+    </div>
+    <div class="workshop-grid">
+        <div class="workshop-card">
+            <h3><span class="icon"><i class="fab fa-python"></i></span>Python & Flask Kickstart</h3>
+            <div class="time-slot">10:00 AM - 12:00 PM</div>
+            <ul class="topic-list">
+                <li>Introduction to Python for backend development</li>
+                <li>Setting up Flask for web apps</li>
+                <li>Installing SQLAlchemy in Python projects</li>
+                <li>Creating first Flask API endpoint</li>
+            </ul>
+        </div>
+        <div class="workshop-card">
+            <h3><span class="icon"><i class="fas fa-database"></i></span>SQL Database Essentials</h3>
+            <div class="time-slot">12:00 PM - 1:00 PM</div>
+            <ul class="topic-list">
+                <li>RDBMS rules for schema</li>
+                <li>One-to-many relationships with SQLAlchemy models</li>
+                <li>Insert, update, and delete data from tables with Flask API</li>
+                <li>How to find models in the database by ID & return a 404 error</li>
+            </ul>
+        </div>
+        <div class="workshop-card">
+            <h3><span class="icon"><i class="fas fa-code-branch"></i></span>CRUD & Advanced Relationships</h3>
+            <div class="time-slot">1:00 PM - 3:00 PM</div>
+            <ul class="topic-list">
+                <li>Update models with SQLAlchemy through Flask</li>
+                <li>Retrieve list of all models using Flask endpoints</li>
+                <li>Delete models (and related models with cascading)</li>
+                <li>Implement changes in session</li>
+                <li>One-to-many and many-to-many relationships in SQLAlchemy</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+            <!-- Day 2 Content -->
+            <section id="day2" class="day-section">
+                <div class="day-header">
+                    <h2>Day 2 - User Authentication & API</h2>
+                    <p>Build secure APIs using Flask JWT-Extended and best practices</p>
+                </div>
+                <div class="workshop-grid">
+                    <div class="workshop-card">
+                        <h3><span class="icon"><i class="fas fa-shield-alt"></i></span>User Authentication</h3>
+                        <div class="time-slot">10:00 AM - 12:00 PM</div>
+                        <ul class="topic-list">
+                            <li>What is JWT?</li>
+                            <li>User model and schema coding</li>
+                            <li>Add register endpoint to REST API</li>
+                            <li>Add login endpoint to REST API</li>
+                            <li>Protect endpoints by requiring JWT</li>
+                            <li>JWT claims and authorization</li>
+                            <li>Add logout to REST API</li>
+                            <li>Request chaining with Insomnia</li>
+                            <li>Token refreshing with Flask-JWT-Extended</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="workshop-grid">
+                    <div class="workshop-card">
+                        <h3><span class="icon"><i class="fas fa-receipt"></i></span>Text Summarizer</h3>
+                        <div class="time-slot">12:00 PM - 2:00 PM</div>
+                        <ul class="topic-list">
+                            <li>Data preparation</li>
+                            <li>Data cleaning</li>
+                            <li>Importing libraries</li>
+                            <li>Text summarization</li>
+                        </ul>
+                    </div>
+                    <div class="workshop-card">
+                        <h3><span class="icon"><i class="fas fa-shapes"></i></span>Object Identifier</h3>
+                        <div class="time-slot">2:00 PM - 3:00 PM</div>
+                        <ul class="topic-list">
+                            <li>Taking images</li>
+                            <li>Training a model and checking accuracy</li>
+                            <li>Using the model for object identification</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Day 3 Content -->
+            <section id="day3" class="day-section">
+                <div class="day-header">
+                    <h2>Day 3 - Challenge Day & AI Projects</h2>
+                    <p>Apply your skills in practical and competitive projects</p>
+                </div>
+                <div class="workshop-grid">
+                    <div class="workshop-card">
+                        <h3><span class="icon"><i class="fas fa-file-excel"></i></span>Excel Data Chatbot</h3>
+                        <div class="time-slot">Morning - 3:00 PM</div>
+                        <ul class="topic-list">
+                            <li>Application accepts Excel files</li>
+                            <li>Chatbot answers all questions from Excel data</li>
+                            <li>Correctness is key!</li>
+                        </ul>
+                    </div>
+                    <div class="workshop-card">
+                        <h3><span class="icon"><i class="fas fa-chess"></i></span>Chess Challenge</h3>
+                        <div class="time-slot">Morning - 3:00 PM</div>
+                        <ul class="topic-list">
+                            <li>Chessboard image-based move tracker</li>
+                            <li>Tracks black/white moves</li>
+                            <li>Detect "check" and "checkmates"</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="prize-section">
+                    <h4><i class="fas fa-trophy"></i> Special Rewards</h4>
+                    <p>Whoever generates the best model will be given <strong>prize money and energy giveaways</strong> with participation certificates!</p>
+                </div>
+            </section>
+
+            <div class="cta-section">
+                <h3>Ready to Transform Your Tech Skills?</h3>
+                <p>Join TMS's comprehensive 3-day workshop and master cutting-edge technologies</p>
+                <a href="#register" class="cta-button">Register Now</a>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function showDay(dayId, event) {
+            // Hide all day sections
+            const sections = document.querySelectorAll('.day-section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+
+            // Remove active class from all nav links
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+            });
+
+            // Show selected day section
+            document.getElementById(dayId).classList.add('active');
+
+            // Add active class to clicked nav link
+            event.target.classList.add('active');
+
+            // Animate cards
+            setTimeout(() => {
+                document.querySelectorAll('.day-section.active .workshop-card').forEach((card, i) => {
+                    setTimeout(() => card.classList.add('visible'), i * 140);
+                });
+            }, 100);
+
+            // Smooth scroll to top of content
+            document.querySelector('main').scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        // Initial show cards animation upon load
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('.day-section.active .workshop-card').forEach(function (card, i) {
+                setTimeout(() => card.classList.add('visible'), i * 140);
+            });
+        });
+    </script>
+</body>
+</html>
