@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TMS Special Workshop - Deploy Flask on Vercel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google Fonts for Typo Style -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --tms-navy: #19325a;
+            --tms-green: #1da078;
+            --tms-light: #f6fafd;
+            --tms-grey: #444b54;
+        }
+        body {
+            font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+            background: var(--tms-light);
+            color: var(--tms-navy);
+        }
+        header {
+            background: white;
+            box-shadow: 0 6px 24px rgba(25, 50, 90, 0.10);
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 30px 15px 20px 15px;
+        }
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        .logo {
+            width: 54px;
+            height: 54px;
+            background: var(--tms-navy);
+            color: var(--tms-green);
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            letter-spacing: 2px;
+        }
+        .company-info h1 {
+            color: var(--tms-navy);
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        .company-info p {
+            color: var(--tms-green);
+            font-size: 1rem;
+            font-weight: 500;
+            margin-top: 2px;
+        }
+        nav {
+            background: var(--tms-navy);
+            margin-bottom: 30px;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            list-style: none;
+            padding: 20px 0 10px 0;
+        }
+        .nav-links a {
+            color: white;
+            font-weight: 600;
+            padding: 10px 30px;
+            border-radius: 22px;
+            text-decoration: none;
+            transition: background 0.22s, color 0.22s;
+        }
+        .nav-links a.active,
+        .nav-links a:hover {
+            background: var(--tms-green);
+            color: var(--tms-navy);    
+        }
+        .workshop-card {
+            background: var(--tms-light);
+            border-left: 8px solid var(--tms-green);
+            border-radius: 15px;
+            box-shadow: 0 1px 10px rgba(25, 50, 90, 0.04);
+            padding: 1.5rem 1.5rem 1.25rem 1.5rem;
+            margin-bottom: 18px;
+        }
+        .workshop-card h2 {
+            font-size: 1.6rem;
+            color: var(--tms-navy);
+            margin-bottom: 1.2rem;
+        }
+        .workshop-features {
+            font-size: 1.13rem;
+            margin: 8px 0;
+            color: var(--tms-grey);
+        }
+        ul.topic-list {
+            margin: 16px 0 6px 0;
+            padding-left: 18px;
+        }
+        ul.topic-list li {
+            font-size: 1.05rem;
+            color: var(--tms-grey);
+            margin-bottom: 9px;
+            position: relative;
+            padding-left: 12px;
+        }
+        ul.topic-list li:before {
+            content: "▪";
+            position: absolute;
+            left: -10px;
+            color: var(--tms-green);
+            font-size: 1rem;
+            top: 2px;
+        }
+        .schedule-block {
+            margin: 15px 0;
+            padding: 15px;
+            background: #fff;
+            border-radius: 9px;
+            box-shadow: 0 1px 5px rgba(25,50,90,0.05);
+        }
+        .price-block {
+            margin-top: 18px;
+            font-size: 1.13rem;
+            padding: 15px;
+            background: var(--tms-green);
+            color: white;
+            border-radius: 10px;
+            font-weight: 500;
+        }
+        .notice-block {
+            margin-top: 20px;
+            background: var(--tms-navy);
+            color: white;
+            padding: 18px;
+            font-size: 1.12rem;
+            border-radius: 12px;
+        }
+        @media (max-width:850px){
+            .container { padding: 25px 8px 16px 8px;}
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container logo-section">
+            <div class="logo">
+                <img src="static\tmslogo2.jpg" style="width:40px;height:40px;" alt="TMS Logo" />
+            </div>
+            <div class="company-info">
+                <h1>Talent Map Solutions</h1>
+                <p>Empowering Youth, Enabling Careers.</p>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="/" >Home</a></li>
+            <li><a href="#" class="active">Special Workshop</a></li>
+            <li><a href="#price-block1">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="workshop-card">
+            <h2><i class="fas fa-laptop-code"></i> Flask Deployment Bootcamp</h2>
+            <div class="workshop-features">
+                <b>What you’ll learn:</b>
+            </div>
+            <ul class="topic-list">
+                <li>HTML, CSS, <b>Jinja</b> Templates, Python basics</li>
+                <li>Flask API framework essentials</li>
+                <li>POST &amp; GET requests in Flask</li>
+                <li>Login &amp; Logout systems implementation</li>
+                <li>Database modeling and configuration</li>
+                <li>Deploying your project on Vercel</li>
+            </ul>
+            <div class="schedule-block">
+                <b>Schedule:</b><br>
+                <i class="fas fa-calendar-day"></i> Sunday<br>
+                <i class="far fa-clock"></i> <b>10AM - 5PM</b> <br>
+                <span style="color:var(--tms-green);font-weight:500;">Thursday session duration: 20mins</span>
+            </div>
+            <div class="price-block" id ="price-block1">
+                Workshop Fee: <b>₹199</b>. Limited slots available. - contact +91 81255 81010<br>
+                <span style="font-size:1.05rem;">Online interactive workshop (in Telugu): <b>Trainer -> <a href="https://www.youtube.com/@quicklearnpython">
+                (@quicklearnpython)</a></b>At the end of the session you will get a completion certificate along with a challenging task.</span>
+            </div>
+            <div class="notice-block">
+                Any candidate is allowed.<br>
+                <div style="margin:9px 0 5px 0;"><b>Interactive Online Workshop Timings (Telugu) - contact +91 81255 81010:</b></div>
+                <ul style="padding-left:27px; margin-top:5px;">
+                    <li>Start of 1st half : <b>10AM - 12PM</b></li>
+                    <li>Break: <b>12PM - 1PM</b></li>
+                    <li>Start of 2nd half : <b>1PM - 5PM</b></li>
+                </ul>
+                <span><b>Total workshop duration:</b> ~6 hours</span>
+                - contact +91 81255 81010
+            </div>
+        </div>
+    </div>
+</body>
+</html>
